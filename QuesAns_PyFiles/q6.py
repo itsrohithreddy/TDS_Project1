@@ -7,7 +7,7 @@ joindate = dict()
 with open('../users.csv', 'r', encoding='utf-8') as file:
     reader = csv.DictReader(file)
     for row in reader:
-        joindate.get(row.get('login')) = row.get('created_at')
+        joindate[row.get('login')] = row.get('created_at')
 
 with open('../repositories.csv', 'r', encoding='utf-8') as file:
     reader = csv.DictReader(file)
