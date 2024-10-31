@@ -1,6 +1,6 @@
 # GitHub Users in the city Tokyo
 
-This repository contains data about GitHub users in Tokyo with over 100 followers and their repositories.
+This repository contains data about GitHub users in Tokyo with over 200 followers and their repositories.
 
 ## Files
 
