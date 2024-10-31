@@ -3,10 +3,16 @@ from collections import Counter
 from datetime import datetime
 
 languages = []
+joindate = dict()
+with open('../users.csv', 'r', encoding='utf-8') as file:
+    reader = csv.DictReader(file)
+    for row in reader:
+        joindate.get(row.get('login')) = row.get('created_at')
+
 with open('../repositories.csv', 'r', encoding='utf-8') as file:
     reader = csv.DictReader(file)
     for row in reader:
-        created_at = row.get('created_at', '').strip()
+        created_at = joindate.get(row.get('login'))
         if created_at:
             user_join_date = datetime.strptime(created_at, "%Y-%m-%dT%H:%M:%SZ")
             if user_join_date.year >= 2020:
