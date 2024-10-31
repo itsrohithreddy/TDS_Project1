@@ -1,6 +1,6 @@
 import pandas as pd
 
-def analyze_email_sharing(users_csv_path='users.csv'):
+def analyze_email_sharing(users_csv_path='../users.csv'):
     df = pd.read_csv(users_csv_path)
     df['has_email'] = df['email'].notna() & (df['email'] != '')
     

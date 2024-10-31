@@ -1,6 +1,6 @@
 import pandas as pd
 import statsmodels.api as sm
-csv_file = 'users.csv'  
+csv_file = '../users.csv'  
 df = pd.read_csv(csv_file)
 df = df[df['bio'].notnull()]
 df['bio_word_count'] = df['bio'].str.split().str.len()

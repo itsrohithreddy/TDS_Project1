@@ -3,7 +3,7 @@ from collections import defaultdict
 
 language_stats = defaultdict(lambda: {'stars': 0, 'repos': 0})
 
-with open('repositories.csv', 'r', encoding='utf-8') as file:
+with open('../repositories.csv', 'r', encoding='utf-8') as file:
     reader = csv.DictReader(file)
     
     for row in reader:

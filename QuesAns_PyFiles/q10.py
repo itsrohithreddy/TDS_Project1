@@ -3,7 +3,7 @@ import numpy as np
 followers = []
 public_repos = []
 
-with open('users.csv', 'r', encoding='utf-8') as file:
+with open('../users.csv', 'r', encoding='utf-8') as file:
     reader = csv.DictReader(file)
     
     for row in reader:

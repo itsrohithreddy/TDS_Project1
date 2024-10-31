@@ -1,7 +1,7 @@
 import csv
 leader_strengths = []
 
-with open('users.csv', 'r', encoding='utf-8') as file:
+with open('../users.csv', 'r', encoding='utf-8') as file:
     reader = csv.DictReader(file)
     
     for row in reader:

@@ -3,7 +3,7 @@ from collections import Counter
 
 languages = []
 
-with open('repositories.csv', 'r', encoding='utf-8') as file:
+with open('../repositories.csv', 'r', encoding='utf-8') as file:
     reader = csv.DictReader(file)
     for row in reader:
         language = row.get('language', '').strip()

@@ -9,5 +9,5 @@ def analyze_repo_features(csv_file):
     correlation = df['has_projects'].corr(df['has_wiki'])
     return round(correlation, 3)
 
-correlation = analyze_repo_features('repositories.csv')
+correlation = analyze_repo_features('../repositories.csv')
 print(f"Correlation coeff: {correlation}")

@@ -3,7 +3,7 @@ from collections import Counter
 from datetime import datetime
 weekend_repo_counts = Counter()
 
-with open('repositories.csv', 'r', encoding='utf-8') as file:
+with open('../repositories.csv', 'r', encoding='utf-8') as file:
     reader = csv.DictReader(file)
     for row in reader:
         created_at = row.get('created_at', '')
