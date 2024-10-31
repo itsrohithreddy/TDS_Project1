@@ -15,6 +15,6 @@ if surname_counter:
     max_count = max(surname_counter.values())
     most_common_surnames = [surname for surname, count in surname_counter.items() if count == max_count]
     most_common_surnames.sort()
-    print(f"{', '.join(most_common_surnames)}: {max_count}")
+    print(f"{','.join(most_common_surnames)}: {max_count}")
 else:
     print("No names found.")
